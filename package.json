@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/apollo": "^5.0.0-alpha.6",
+    "@nuxtjs/google-fonts": "^3.0.0",
+    "nuxt": "^3.3.2",
+    "nuxt-icon": "^0.3.3"
+  },
+  "dependencies": {
+    "@nuxt3/apollo-module": "^0.1.1",
+    "bootstrap": "^5.2.3",
+    "graphql-tag": "^2.12.6",
+    "vue-toast-notification": "^3.1.1"
+  }
+}

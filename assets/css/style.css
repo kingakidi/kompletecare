@@ -1,0 +1,157 @@
+:root {
+  --color: #847ebb;
+  --dark-color: #5e4fe1;
+  --gray-color: #5e5959;
+  --white: #fff;
+
+  --shadow: #27272785;
+}
+
+/* sidebar  */
+nav {
+  background-color: var(--white);
+  height: 100%;
+  box-shadow: -10px 0px 10px 3.5px var(--shadow);
+  padding: 80px 10px 10px;
+}
+nav div {
+  width: 200px !important;
+  font-size: 14px;
+}
+
+nav div:hover {
+  color: var(--white);
+  background-color: var(--dark-color);
+  border-radius: 3px;
+}
+
+nav svg {
+  /* font-size: 15px; */
+  height: 20px;
+  height: 17px;
+}
+
+.sidebar-link {
+  margin-left: 12px;
+}
+
+#sidebar {
+  position: inherit;
+  height: 100%;
+}
+/* end of sidebar  */
+
+.top-container {
+  padding-right: 80px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+span,
+svg {
+  margin: 10px;
+  height: 23px;
+}
+
+.light-blue-color {
+  color: var(--color);
+}
+
+.bg-light-blue {
+  background-color: var(--color);
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-color);
+}
+
+.text-dark-blue {
+  color: var(--dark-color);
+}
+.text-medium-bold {
+  font-weight: 500;
+}
+
+.text-light-gray {
+  color: var(--gray-color);
+}
+
+.content {
+  width: 100%;
+}
+.records {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-gap: 5px;
+  padding: 10px;
+  border-bottom: 0.5px solid var(--gray-color);
+  margin-bottom: 40px;
+}
+
+.record {
+  width: 100%;
+  margin: 30px;
+  margin-left: 0px;
+}
+
+.records-container {
+  background-color: var(--white);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  padding: 10px 15px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+.btn {
+  background-color: var(--dark-color);
+}
+
+.btn:hover {
+  background-color: var(--dark-color);
+}
+
+@keyframes over {
+  0% {
+    opacity: 0;
+    margin-left: -99em;
+  }
+  50% {
+    opacity: 0;
+    margin-left: 15px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 15px;
+  }
+}
+/* Breaking points  */
+
+@media (max-width: 768px) {
+  #sidebar {
+    width: 60px;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  #sidebar:hover {
+    width: 232px !important;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+  }
+
+  .content-container {
+    margin-left: 80px !important;
+  }
+}
